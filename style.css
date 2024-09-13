@@ -11,6 +11,10 @@ body {
   font-family: sans-serif;
 }
 
+.blurred {
+  filter: blur(5px);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -67,4 +71,44 @@ body {
 .value-sub-info {
   font-weight: lighter;
   font-size: 0.75rem;
+}
+
+.day-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 75px);
+  gap: .5rem;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.day-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: .25rem;
+  padding: .25rem;
+}
+
+.day-card-day {
+  font-size: .75rem;
+  margin-top: .5rem;
+}
+
+.hour-section {
+  width: 100%;
+  text-align: center;
+  border-spacing: 0;
+}
+
+.hour-row {
+  background-color: rgb(178, 209, 236);
+}
+/* Funkar inte med nth-child av någon anledning.. */
+.hour-row:nth-child(2n) {
+  background-color: rgb(60, 71, 82);
+}
+
+.hour-row > td {
+  padding: 0.25rem .5rem;
 }
