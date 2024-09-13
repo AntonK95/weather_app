@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Väder</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <img class="weather-icon large" src="/icons/cloud-bolt-solid.svg" alt="weather icon" data-current-icon>
+      <div class="header-current-temp">
+        <span data-current-temp>31</span>&deg;
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="info-group">
+        <div class="label">High</div>
+        <div><span data-current-high>32</span>&deg;</div>
+      </div>
+      <div class="info-group">
+        <div class="label">FL High</div>
+        <div><span data-current-fl-high>30</span>&deg;</div>
+      </div>
+      <div class="info-group">
+        <div class="label">Wind</div>
+        <div><span data-current-wind>9</span><span class="value-sub-info">ms</span></div>
+      </div>
+      <div class="info-group">
+        <div class="label">Low</div>
+        <div><span data-current-low>32</span>&deg;</div>
+      </div>
+      <div class="info-group">
+        <div class="label">FL low</div>
+        <div><span data-current-fl-low>20</span>&deg;</div>
+      </div>
+      <div class="info-group">
+        <div class="label">Precip</div>
+        <div><span data-current-precip>0.1</span><span class="value-sub-info">mm</span></div>
+      </div>
+    </div>
+  </header>
+
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
